@@ -3,9 +3,17 @@ export function dropdownMenuButton(dropdownButtons, dropdownLists) {
     dropdownButtons[i].addEventListener("mouseover", () => {
       dropdownLists[i].classList.remove("hidden");
     });
+
+    dropdownLists[i].addEventListener("mouseover", () => {
+      dropdownLists[i].classList.remove("hidden");
+    });
   }
   for (let i = 0; i < dropdownButtons.length; i++) {
     dropdownButtons[i].addEventListener("mouseout", () => {
+      dropdownLists[i].classList.add("hidden");
+    });
+
+    dropdownLists[i].addEventListener("mouseout", () => {
       dropdownLists[i].classList.add("hidden");
     });
   }
