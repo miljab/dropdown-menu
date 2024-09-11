@@ -1,0 +1,28 @@
+.dropdown-button {
+  width: 200px;
+  height: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  width: 200px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+}
